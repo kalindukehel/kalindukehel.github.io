@@ -62,6 +62,9 @@ z-index: 99;
 
 .projecttitle{
   padding-top: 10%;
+  margin-top:50px;
+  padding-top:100px;
+  font-size:30px;
 }
 .projects{
   padding-top: 1.5%;
@@ -73,25 +76,45 @@ z-index: 99;
 #projectgithub{
   font-size: 22px;
 }
-.projecttitle{
+
+.bio{
   margin-top:300px;
   padding-top:100px;
-  font-size:30px;
 }
+
+.bio p{
+  line-height: 200%;
+  margin:auto;
+  width: 45%;
+}
+
+.heading{
+  letter-spacing: 3px;
+}
+
+
+
 @media (max-width: 750px) {
   .portrait img{
+    padding-top: 2%;
     width:30%;
   }
+
+  .bio p{
+    width: 80%;
+  }
+
   .projects div{
     width:80%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     padding-bottom: 3%;
   }
+
   .projecttitle{
-    margin-top: 250px;
     padding-top:50px;
     font-size:30px;
   }
+
   .projects div p{
     margin-left: 5%;
   }
