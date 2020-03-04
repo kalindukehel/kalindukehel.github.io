@@ -8,18 +8,21 @@
   <title>Kalindu Kehel Baddarage</title>
 </head>
 <body>
-  <div class="portrait">
-    <img src="portrait.jpg" alt="avatar">
-  </div>
 
-  <div class="about-me">
+  <div class="headbar" id="headbar">
+    <div class="portrait" >
+      <img src="portrait.jpg" onclick="topFunction()" alt="avatar" id ="portrait">
+    </div>
+
+  <div class="about-me" id="about-me">
     <h1 >Kalindu Kehel Baddarage</h1>
   </div>
-  <div class="icons">
+  <div class="icons" id="icons">
     <a href="https://github.com/kalindukehel"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/kalindu-kehel-baddarage"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.instagram.com/enticing/"><i class="fab fa-instagram"></i></a>
     </div>
+      </div>
     <h2 class="projecttitle">Projects</h2>
     <div class="projects">
       <div class ="MealSpanWeb">
@@ -28,7 +31,7 @@
         <p>A common issue amongst new university students is spending too much or too little,
           thus wasting their money. I created this web app with Python, Flask and JavaScript for the back end,
            along with HTML and CSS for the frontend to help students budget their meal plan accordingly.</p>
-          <i class="fab fa-github" id="projectgithub"></i>
+           <a href="https://github.com/kalindukehel/MealSpanWeb"><i class="fab fa-github" id="projectgithub"></i></a>
       </div>
       <div class ="MealSpan">
                 <!-- <img src="mealspanpreview.gif" alt=""> -->
@@ -36,7 +39,7 @@
         <p>The original program which inspired the creation of the MealSpan web app. This app
         was created in Python using Tkinter, Beautiful Soup 4, and Requests to gather information about
       students' meal plan spending habits and give them personalized recommendations.</p>
-        <i class="fab fa-github" id="projectgithub"></i>
+      <a href="https://github.com/kalindukehel/MealSpan"><i class="fab fa-github" id="projectgithub"></i></a>
       </div>
       <div class ="Crazy Eights">
                 <!-- <img src="Crazy_Eights_Preview.gif" alt=""> -->
@@ -44,7 +47,8 @@
         <p>A group project in which the popular card game Crazy Eights was developed using Java. A graphical
         interface was created to let the user interact with and view their deck. This project relied heavily
       of object-oriented programming and similar applicable concepts in Java.</p>
-                <i class="fab fa-github" id="projectgithub"></i>
+      <a href="https://github.com/kalindukehel/Crazy-Eights"><i class="fab fa-github" id="projectgithub"></i></a>
+
       </div>
       <div class ="MealSpan">
                 <!-- <img src="placeholder.png" alt=""> -->
@@ -52,11 +56,46 @@
         <p>Driven by my interest in typing tests, I created a bot in Python to automatically complete the 10FastFingers test based on the user's
         instructions. This bot was created using the Selenium framework for browser automation and Beautiful Soup for
       parsing the generated words.</p>
-                <i class="fab fa-github" id="projectgithub"></i>
+      <a href="https://github.com/kalindukehel/10FastFingers-Bot"><i class="fab fa-github" id="projectgithub"></i></a>
       </div>
     </div>
 
 
+    <script>
+    // When the user scrolls down 120px from the top of the document, resize the navbar's padding and the logo's font size
+    window.onscroll = function() {scrollFunction()};
 
+    function scrollFunction() {
+      if (screen && screen.width < 750){
+        var fromtop = 50;
+      }else{
+        var fromtop = 100;
+      }
+      if (document.body.scrollTop > fromtop || document.documentElement.scrollTop > fromtop) {
+        document.getElementById("portrait").style.width = "75px";
+        document.getElementById("headbar").style["background-color"] = "#222831";
+        document.getElementById("headbar").style["box-shadow"]= "rgba(2, 12, 27, 0.7) 0px 8px 15px -13px";
+        document.getElementById("about-me").style.opacity = "0";
+        document.getElementById("about-me").style.visibility = "hidden";
+        document.getElementById("icons").style.opacity = "0";
+        document.getElementById("icons").style.visibility = "hidden";
+        document.getElementById("headbar").style.height = "15%";
+      } else {
+        document.getElementById("portrait").style.width = "";
+        document.getElementById("headbar").style["box-shadow"]= "";
+        document.getElementById("headbar").style["background-color"] = "";
+        document.getElementById("about-me").style.opacity = "1";
+        document.getElementById("about-me").style.visibility = "";
+        document.getElementById("icons").style.opacity = "1";
+        document.getElementById("icons").style.visibility = "";
+        document.getElementById("headbar").style.height = "";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+    </script>
   </body>
   </html>
