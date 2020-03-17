@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 body{
+  margin:0;
   text-align: center;
   background-color: #222831;
   color: #fff;
@@ -16,12 +17,11 @@ a{
   border-radius: 50%;
 }
 .headbar{
-  margin-left: -8px;
   overflow: visible; /* Adds a transition effect when the padding is decreased */
-position: fixed; /* Sticky/fixed navbar */
-width: 100%;
-top: 0; /* At the top */
-z-index: 99;
+  position: fixed; /* Sticky/fixed navbar */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99;
 }
 .about-me{
   transition: 0.1s;
