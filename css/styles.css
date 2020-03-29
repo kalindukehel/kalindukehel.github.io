@@ -40,8 +40,9 @@ a{
   box-shadow: 0 4px 8px 0 black;
   border-radius: 1%;
   padding: 1%;
-  margin-right: 0.5%;
-    width:18%;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
+  width:300px;
   margin-bottom: 5%;
 }
 
@@ -70,7 +71,7 @@ a{
   padding-top: 1.5%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 #projectgithub{
@@ -94,7 +95,7 @@ a{
 
 
 
-@media (max-width: 750px) {
+@media (max-width: 650px) {
   .portrait img{
     padding-top: 2%;
     width:30%;
@@ -105,7 +106,8 @@ a{
   }
 
   .projects div{
-    width:80%;
+    margin-right:0;
+    margin-left: 0;
     margin-bottom: 20%;
     padding-bottom: 3%;
   }
