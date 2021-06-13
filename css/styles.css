@@ -1,123 +1,121 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-body{
-  margin:0;
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  margin: 0;
   text-align: center;
   background-color: #222831;
   color: #fff;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
-a{
+a {
   color: inherit;
   text-decoration: none;
 }
-.portrait img{
+.portrait img {
   transition: 0.2s;
   margin-top: 1%;
-  width:10%;
+  width: 10%;
   border-radius: 50%;
 }
-.headbar{
+.headbar {
   overflow: visible; /* Adds a transition effect when the padding is decreased */
   position: fixed; /* Sticky/fixed navbar */
   width: 100%;
   top: 0; /* At the top */
   z-index: 99;
 }
-.about-me{
+.about-me {
   transition: 0.1s;
   margin-top: -1%;
 }
 
-.icons{
+.icons {
   transition: 0.1s;
 }
-.icons i{
+.icons i {
   font-size: 20px;
   padding-right: 1%;
 }
 
-.projects div{
+.projects div {
   box-shadow: 0 4px 8px 0 black;
-  border-radius: 1%;
+  border-radius: 10%;
   padding: 1%;
   margin-right: 2.5%;
   margin-left: 2.5%;
-  width:300px;
+  width: 300px;
   margin-bottom: 5%;
 }
 
-.projects div p{
+.projects div p {
   text-align: left;
   line-height: 150%;
 }
 
-.projects img{
-  width:50%;
+.projects img {
+  width: 50%;
 }
 
-.projects div:hover{
+.projects div:hover {
   /* projects hover effects */
   transition: all 0.5s ease;
   box-shadow: 0 8px 16px 0 black;
 }
 
-.projecttitle{
+.projecttitle {
   padding-top: 10%;
-  margin-top:50px;
-  padding-top:100px;
-  font-size:30px;
+  margin-top: 50px;
+  padding-top: 100px;
+  font-size: 30px;
 }
-.projects{
+.projects {
   padding-top: 1.5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-#projectgithub{
+#projectgithub {
   font-size: 22px;
 }
 
-.bio{
-  margin-top:300px;
-  padding-top:100px;
+.bio {
+  margin-top: 300px;
+  padding-top: 100px;
 }
 
-.bio p{
+.bio p {
   line-height: 200%;
-  margin:auto;
+  margin: auto;
   width: 45%;
 }
 
-.heading{
+.heading {
   letter-spacing: 3px;
 }
 
-
-
 @media (max-width: 650px) {
-  .portrait img{
+  .portrait img {
     padding-top: 2%;
-    width:30%;
+    width: 30%;
   }
 
-  .bio p{
+  .bio p {
     width: 80%;
   }
 
-  .projects div{
-    margin-right:0;
+  .projects div {
+    margin-right: 0;
     margin-left: 0;
     margin-bottom: 20%;
     padding-bottom: 3%;
   }
 
-  .projecttitle{
-    padding-top:50px;
-    font-size:30px;
+  .projecttitle {
+    padding-top: 50px;
+    font-size: 30px;
   }
 
-  .projects div p{
+  .projects div p {
     margin-left: 5%;
   }
 }
